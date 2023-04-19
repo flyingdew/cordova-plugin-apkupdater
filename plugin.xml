@@ -27,12 +27,10 @@
     <platform name="android">
 
         <framework src="net.lingala.zip4j:zip4j:2.9.1"/>
-        <framework src="androidx.core:core:1.6.0"/>
         <framework src="com.scottyab:rootbeer-lib:0.1.0"/>
+        <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_V4_VERSION"/>
 
-        <config-file target="config.xml" parent="/*">
-            <preference name="AndroidXEnabled" value="true"/>
-        </config-file>
+        <preference name="ANDROID_SUPPORT_V4_VERSION" default="27.+"/>
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="ApkUpdater">
